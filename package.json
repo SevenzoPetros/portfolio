@@ -10,6 +10,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "autoprefixer": "^10.4.27",
     "next": "^15.1.6",
     "react": "19.2.3",
