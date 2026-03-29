@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Sevenzo Petros Kudakwashe - Data Scientist | Software Developer | Web Developer | Graphic Designer",
@@ -451,11 +452,12 @@ export default function Home() {
       <footer className="border-t border-border py-8 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2024 Sevenzo Petros Kudakwashe. All rights reserved.
+            2024 Sevenzo Petros Kudakwashe. All rights reserved.
           </p>
         </div>
       </footer>
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
