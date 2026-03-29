@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Sevenzo Petros Kudakwashe - Data Scientist | Software Developer | Web Developer | Graphic Designer",
@@ -454,6 +455,7 @@ export default function Home() {
           </p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
