@@ -274,11 +274,39 @@ export default function Home() {
       <section id="experience" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-helvetica-neue text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Professional Experience</h2>
-          <div className="relative">
+          
+          {/* Mobile Timeline */}
+          <div className="md:hidden relative">
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-300 via-cyan-300 to-purple-300"></div>
+            <div className="space-y-8">
+              <div className="relative flex items-start gap-6">
+                <div className="w-8 h-8 bg-blue-500 rounded-full border-4 border-white shadow-lg z-10 flex-shrink-0"></div>
+                <div className="flex-1 bg-white border border-blue-200 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <h3 className="font-futura font-semibold text-lg text-blue-700 mb-2">Data Scientist</h3>
+                  <p className="text-sm text-gray-700 mb-2">Synapse Technologies Pvt Ltd.</p>
+                  <p className="text-sm text-gray-700 mb-3">2024 - Present</p>
+                  <p className="text-sm text-gray-700">Leading AI model development and optimization projects. Implementing machine learning solutions for business challenges.</p>
+                </div>
+              </div>
+              
+              <div className="relative flex items-start gap-6">
+                <div className="w-8 h-8 bg-cyan-500 rounded-full border-4 border-white shadow-lg z-10 flex-shrink-0"></div>
+                <div className="flex-1 bg-white border border-cyan-200 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <h3 className="font-futura font-semibold text-lg text-cyan-700 mb-2">Web Developer</h3>
+                  <p className="text-sm text-gray-700 mb-2">HomeFixGroup Pty Ltd.</p>
+                  <p className="text-sm text-gray-700 mb-3">2025</p>
+                  <p className="text-sm text-gray-700">Developed scalable web applications using React, Node.js, Wix and cloud technologies. Led mobile app development initiatives.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Timeline */}
+          <div className="hidden md:block relative">
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-blue-300 via-cyan-300 to-purple-300"></div>
             <div className="space-y-12">
               <div className="flex items-center justify-center">
-                <div className="w-full md:w-5/12 text-right pr-8 hidden md:block">
+                <div className="w-5/12 text-right pr-8">
                   <div className="bg-white border border-blue-200 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                     <h3 className="font-futura font-semibold text-lg text-blue-700 mb-2">Data Scientist</h3>
                     <p className="text-sm text-gray-700 mb-2">Synapse Technologies Pvt Ltd.</p>
@@ -287,29 +315,13 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="w-8 h-8 bg-blue-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                <div className="w-full md:w-5/12 pl-8 md:hidden">
-                  <div className="bg-white border border-blue-200 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
-                    <h3 className="font-futura font-semibold text-lg text-blue-700 mb-2">Data Scientist</h3>
-                    <p className="text-sm text-gray-700 mb-2">Synapse Technologies Pvt Ltd.</p>
-                    <p className="text-sm text-gray-700 mb-3">2024 - Present</p>
-                    <p className="text-sm text-gray-700">Leading AI model development and optimization projects. Implementing machine learning solutions for business challenges.</p>
-                  </div>
-                </div>
-                <div className="w-full md:w-5/12 pl-8 hidden md:block"></div>
+                <div className="w-5/12 pl-8"></div>
               </div>
               
               <div className="flex items-center justify-center">
-                <div className="w-full md:w-5/12 pr-8 hidden md:block"></div>
+                <div className="w-5/12 pr-8"></div>
                 <div className="w-8 h-8 bg-cyan-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                <div className="w-full md:w-5/12 pl-8">
-                  <div className="bg-white border border-cyan-200 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
-                    <h3 className="font-futura font-semibold text-lg text-cyan-700 mb-2">Web Developer</h3>
-                    <p className="text-sm text-gray-700 mb-2">HomeFixGroup Pty Ltd.</p>
-                    <p className="text-sm text-gray-700 mb-3">2025</p>
-                    <p className="text-sm text-gray-700">Developed scalable web applications using React, Node.js, Wix and cloud technologies. Led mobile app development initiatives.</p>
-                  </div>
-                </div>
-                <div className="w-full md:w-5/12 pr-8 md:hidden">
+                <div className="w-5/12 pl-8">
                   <div className="bg-white border border-cyan-200 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
                     <h3 className="font-futura font-semibold text-lg text-cyan-700 mb-2">Web Developer</h3>
                     <p className="text-sm text-gray-700 mb-2">HomeFixGroup Pty Ltd.</p>
