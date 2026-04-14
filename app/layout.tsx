@@ -14,8 +14,21 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Sevenzo Petros Kudakwashe | Software Developer",
-  description: "Sevenzo Petros Kudakwashe - Passionate Software Developer building innovative digital solutions. Specializing in modern web technologies and creating exceptional user experiences.",
+  title: "Sevenzo Petros Kudakwashe - Data Scientist | Software Developer | Web Developer | Graphic Designer",
+  description: "Passionate Data Scientist & Software Developer building innovative digital solutions. Specializing in AI, machine learning, full-stack development, and graphic design.",
+  keywords: ["Data Scientist", "Software Developer", "Web Developer", "Graphic Designer", "AI", "Machine Learning", "React", "Next.js", "TypeScript"],
+  authors: [{ name: "Sevenzo Petros Kudakwashe" }],
+  openGraph: {
+    title: "Sevenzo Petros Kudakwashe - Portfolio",
+    description: "Data Scientist & Software Developer specializing in AI, web development, and graphic design.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sevenzo Petros Kudakwashe - Portfolio",
+    description: "Data Scientist & Software Developer specializing in AI, web development, and graphic design.",
+  },
 };
 
 export default function RootLayout({
